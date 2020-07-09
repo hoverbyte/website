@@ -13,4 +13,5 @@
 
 ## Visual Assets
 
-![Hoverbyte Logo](/HOVERBYTE_LOGO_512.png)
+![Hoverbyte Logo](/assets/HOVERBYTE_LOGO_512.png)
+![Hoverbyte Mascot](/assets/hoverbyte_mascot05.png)
