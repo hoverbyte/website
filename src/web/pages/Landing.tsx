@@ -1,5 +1,5 @@
 import * as React from 'react'
 
 export const Landing = () => {
-  return <div>Hoverbyte Conversions</div>
+  return <div class="LPage">Hoverbyte Conversions</div>
 }
