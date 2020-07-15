@@ -19,6 +19,15 @@ h1 {
   color: #0797bc;
 }
 
+h2 {
+  font-size: 30px;
+  color: #c4bfbe;
+}
+
+p {
+  text-indent: 50px;
+}
+
 /* .topDiv {
   display: flex;
   justify-content: space-between;
@@ -43,6 +52,12 @@ h1 {
   font-size: 25px;
   justify-content: space-evenly;
   /* justify-content: flex-end; */
+}
+
+.about {
+  display: flex;
+  /* justify-content: center; */
+  /* flex-direction: column; */
 }
 
 footer {
