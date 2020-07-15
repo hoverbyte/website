@@ -17,6 +17,7 @@
     "watch-web": "nodemon -w lib/web -x 'yarn build-web'",
     "watch-server": "nodemon -w lib/api -w lib/lib lib/api/index.js",
     "watch": "NODE_ENV=development concurrently 'yarn watch-ts' 'yarn watch-web' 'yarn watch-server' 'yarn livereload'",
+    "static-start": "concurrently 'http-server public' 'livereload public'",
     "staticserver": "livereload public"
   },
   "dependencies": {
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
+    "http-server": "^0.12.3",
     "livereload": "^0.9.1",
     "nodemon": "^2.0.4",
     "typescript": "^3.9.6",
