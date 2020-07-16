@@ -1,10 +1,11 @@
 .colors {
   black: #0f0706;
   dgrey: #383636;
-  mgrey: #8e8a89;
+  mgrey: #b3aead;
   lgrey: #c4bfbe;
   hwhite: #f1edec;
   hblue: #0797bc;
+  hblue2: #0c7a95;
   lblue: #91b1b8;
   hyellow: #ddcd40;
   hred: #d64422;
@@ -12,7 +13,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #8e8a89;
+  background-color: #c4bfbe;
   /*background-image: url('/images/HB_Hero.png');*/
 }
 
@@ -38,7 +39,7 @@ h1 {
 h2 {
   display: flex;
   font-size: 200%;
-  color: #c4bfbe;
+  color: #0c7a95;
   justify-content: start;
   padding-left: 15%;
   /* justify-content: center; */
@@ -46,20 +47,19 @@ h2 {
 
 p {
   font-size: 150%;
-  color: #f1edec;
+  color: #0f0706;
   text-indent: 5%;
-  padding: 2% 5% 2% 5%;
+  padding: 0px 16px;
 }
 
 .topSection {
   display: flex;
   background-color: #f1edec;
   align-items: center;
-  /* justify-content: space-evenly; */
   flex-grow: 1;
+  justify-content: space-evenly;
   /* border: #f1edec; */
   /* border-radius: 5px; */
-  /* background-image: linear-gradient(180deg, #f1edec 0%, #383636 200%); */
   /* text-align: center; */
   /* flex-direction: row; */
 }
@@ -79,10 +79,12 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #383636;
-  border: #a12d16;
-  border-width: 30px;
-  margin: 2% 15% 2% 15%;
+  /* background-color: #b3aead; */
+  border: solid #f1edec;
+  border-width: 0px 2px;
+  margin: 2% 15%;
+  background-image: linear-gradient(180deg, #f1edec 0%, #c4bfbe 25%);
+  /* border: #f1edec; */
   /* justify-content: center; */
 }
 
@@ -104,7 +106,7 @@ footer {
   display: flex;
   text-align: center;
   font-size: 150%;
-  color: #ddcd40;
+  color: #0c7a95;
   /* flex-wrap: nowrap; */
   /* flex-direction: row; */
   /* justify-content: center; */
