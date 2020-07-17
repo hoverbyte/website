@@ -1,0 +1,89 @@
+body {
+  background-color: #ffffff;
+  font-family: verdana;
+  font-size: 12px;
+  text-align: center;
+  min-width: 500px;
+  margin: 50 0 0 0;
+}
+
+p {
+  line-height: 18px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+}
+
+.subfield label {
+  display: none;
+}
+
+.addressfield .subfield {
+  display: block;
+  width: 180px;
+}
+
+.addressfield input,
+.addressfield select {
+  width: 150px;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 400px;
+  border: 1px solid #999999;
+  padding: 5 5 15 5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pageTitle {
+  background-color: #dddddd;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+}
+
+.pageTitleAlert {
+  background-color: #ff0000;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+}
+
+.pageTitleSuccess {
+  background-color: #33cc00;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+}
+
+.formLabel {
+  font-size: 13px;
+  vertical-align: top;
+}
+
+.error {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.small {
+  font-size: 11px;
+}
