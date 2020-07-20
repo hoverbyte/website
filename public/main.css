@@ -21,6 +21,7 @@ body {
 }
 
 a {
+  display: flex;
   color: #91b1b8;
   text-decoration: none;
   justify-content: space-evenly;
@@ -37,15 +38,17 @@ h1 {
   color: #0797bc;
 }
 
-h2 {
+h2,
+.subscribeFormTitle {
   display: flex;
   font-size: 2em;
   color: #0c7a95;
-  justify-content: start;
   padding-left: 15%;
+  /* justify-content: start;  */
 }
 
 .descText {
+  display: flex;
   font-size: 1.5em;
   color: #0f0706;
   text-indent: 5%;
@@ -60,7 +63,8 @@ h2 {
   justify-content: space-evenly;
 }
 
-.linkFrags {
+.linkFrags,
+.clear {
   display: flex;
   font-size: 1.6em;
   padding: 1%;
@@ -82,7 +86,10 @@ h2 {
 }
 
 .hoverbyteMascot {
+  display: flex;
   padding-right: 15%;
+  max-width: 100%;
+  height: auto;
 }
 
 .hoverbyteLogo,
@@ -95,7 +102,10 @@ h2 {
 .products,
 .about,
 .projects,
-.subscribe {
+.subscribe,
+.team,
+.terms,
+.privacy {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -105,9 +115,28 @@ h2 {
   /* background-image: linear-gradient(180deg, #f1edec 0%, #c4bfbe 25%); */
 }
 
+.partition {
+  display: flex;
+  background-color: #91b1b8;
+  padding: 5% 10%;
+}
+
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0% 20%;
+}
+
+label,
+strong {
+  display: flex;
+  color: #0c7a95;
+}
+
 .footerBar {
   display: flex;
-  padding: 5% 0%;
+  padding: 3% 0%;
   justify-content: space-around;
 }
 
@@ -124,6 +153,21 @@ footer {
   color: #0c7a95;
 }
 
-.footerLink:hover {
+/* .subLink {
+  color: #0797bc;
+} */
+
+.footerLink:hover,
+.whiteHeader {
   color: #f1edec;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+}
+.teamBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
