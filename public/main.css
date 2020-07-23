@@ -24,12 +24,18 @@ a {
   display: flex;
   color: #91b1b8;
   text-decoration: none;
-  justify-content: space-evenly;
-  padding-right: 8%;
+}
+
+.rightmarginLink {
+  display: flex;
+  padding-right: 4%;
 }
 
 a:hover {
   color: #ddcd40;
+}
+a:visited {
+  color: #0797bc;
 }
 
 h1 {
@@ -44,10 +50,24 @@ h2,
   font-size: 2em;
   color: #0c7a95;
   padding-left: 15%;
-  /* justify-content: start;  */
+}
+.smallerText {
+  display: flex;
+  font-size: 1em;
+  color: #0f0706;
+  text-indent: 5%;
+  padding: 0em 1em;
 }
 
 .descText {
+  display: flex;
+  font-size: 1.5em;
+  color: #0f0706;
+  text-indent: 5%;
+  padding: 0em 1em;
+}
+
+.smallerText {
   display: flex;
   font-size: 1.5em;
   color: #0f0706;
@@ -63,11 +83,17 @@ h2,
   justify-content: space-evenly;
 }
 
-.linkFrags,
-.clear {
+/* originally had .clear selector here too, for some reason? */
+.linkFrags {
   display: flex;
   font-size: 1.6em;
   padding: 1%;
+}
+
+.footerBar,
+.linkFrags {
+  display: flex;
+  flex-direction: row;
 }
 
 .heroImage {
@@ -99,7 +125,19 @@ h2,
   height: auto;
 }
 
-.products,
+.products {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  border: solid #f1edec;
+  border-width: 0em 0.25em;
+  margin: 2% 20% 5% 20%;
+}
+
+.productLink {
+  display: flex;
+  color: #0c7a95;
+}
 .about,
 .projects,
 .subscribe,
@@ -107,12 +145,10 @@ h2,
 .terms,
 .privacy {
   display: flex;
-  align-items: center;
   flex-direction: column;
   border: solid #f1edec;
   border-width: 0em 0.25em;
   margin: 2% 20% 5% 20%;
-  /* background-image: linear-gradient(180deg, #f1edec 0%, #c4bfbe 25%); */
 }
 
 .partition {
@@ -143,12 +179,14 @@ strong {
 footer {
   display: flex;
   justify-content: center;
+  /* justify-content: space-evenly; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
   background-color: #91b1b8;
 }
 
 .footerLink {
   display: flex;
-  text-align: center;
   font-size: 150%;
   color: #0c7a95;
 }
@@ -165,6 +203,9 @@ footer {
 .team {
   display: flex;
   flex-direction: column;
+}
+.bioText {
+  display: flex;
 }
 .teamBlock {
   display: flex;

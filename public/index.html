@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Run >yarn concurrently 'http-server public' 'livereload public' to start Python server -->
 <html>
   <head>
     <!-- Begin Mailchimp Signup Form -->
@@ -35,18 +36,16 @@
       <h1>Hoverbyte</h1>
 
       <nav class="linkFrags">
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#projects">Projects</a>
+        <a href="#about" class="rightmarginLink">About</a>
+        <a href="#products" class="rightmarginLink">Products</a>
+        <a href="#projects" class="rightmarginLink">Projects</a>
         <a href="#mc_embed_signup">Subscribe</a>
       </nav>
     </header>
     <div class="heroImage">
       <p class="heroText">
         We make language-conversion tools,<br />
-        provide automated testing frameworks,<br />
-        package and code-mod repositories<br />
-        and something something something something.
+        to help developers save time and money,<br />
       </p>
       <img
         class="hoverbyteMascot"
@@ -59,26 +58,21 @@
     <h2 id="about">About</h2>
     <div class="about">
       <p class="descText">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis
-        eros, efficitur vel magna quis, suscipit egestas urna. Praesent sit amet
-        urna in lorem vestibulum sodales at eget orci. Aliquam lacinia diam
-        vitae tortor sodales, a fermentum nunc auctor. Mauris vel hendrerit
-        nunc. Proin bibendum, turpis nec malesuada consectetur, lorem neque
-        interdum lectus, eu ornare lacus urna non erat. In fringilla faucibus
-        tincidunt. In nec risus velit.
+        Hoverbyte is offering code conversion services
+         for frontend and backend JavaScript into TypeScript. This includes type interfaces.
+         We are starting with a list of code-mod scripts generated from doing basic code changes
+          and auto-generating code-mods from those changes.
       </p>
     </div>
     <h2 id="products">Products</h2>
     <div class="products">
-      <p class="descText">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis
-        eros, efficitur vel magna quis, suscipit egestas urna. Praesent sit amet
-        urna in lorem vestibulum sodales at eget orci. Aliquam lacinia diam
-        vitae tortor sodales, a fermentum nunc auctor. Mauris vel hendrerit
-        nunc. Proin bibendum, turpis nec malesuada consectetur, lorem neque
-        interdum lectus, eu ornare lacus urna non erat. In fringilla faucibus
-        tincidunt. In nec risus velit.
-      </p>
+        <p class="productDesc"><a href="?" class="productLink">Hoverbyte Converter</a>is an AST-aware diff/patch that will upscale your code!</p>
+        <p class="productDesc"><a href="?" class="productLink">Converted Package Repository</a></p>
+        <p class="productDesc"><a href="?" class="productLink">Managed Conversions</a></p>
+        <p class="productDesc"><a href="?" class="productLink">Code Conversion Cloud (C3)</a></p>
+        <p class="productDesc"><a href="?" class="productLink">Automated Test Suite</a></p>
+        <p class="productDesc"><a href="?" class="productLink">Technical Partnerships Program</a>
+        <p class="productDesc"><a href="?" class="productLink">J.I.T. Training Courses</a></p>
     </div>
     <h2 id="projects">Projects</h2>
     <div class="projects">
@@ -220,6 +214,10 @@
               class="button"
             />
           </div>
+          <label
+            >By subscribing, you agree to our
+            <a href="#terms">Terms of Service</a></label
+          >
         </div>
       </form>
     </div>
@@ -227,34 +225,75 @@
 
     <footer>
       <nav class="footerBar">
-        <a class="footerLink" href="#privacy">Privacy Policy</a>
-        <a class="footerLink" href="#terms">Terms of Service</a>
+        <a class="footerLink rightmarginLink" href="#privacy">Privacy Policy</a>
+        <a class="footerLink rightmarginLink" href="#terms">Terms of Service</a>
         <a class="footerLink" href="#team">The Team</a>
       </nav>
     </footer>
 
     <h2 id="privacy" class="whiteHeader">Privacy Policy</h2>
     <div class="privacy">
-      <p class="descText">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis
-        eros, efficitur vel magna quis, suscipit egestas urna. Praesent sit amet
-        urna in lorem vestibulum sodales at eget orci. Aliquam lacinia diam
-        vitae tortor sodales, a fermentum nunc auctor. Mauris vel hendrerit
-        nunc. Proin bibendum, turpis nec malesuada consectetur, lorem neque
-        interdum lectus, eu ornare lacus urna non erat. In fringilla faucibus
-        tincidunt. In nec risus velit.
-      </p>
+      <p class="descText smallerText">
+        Our privacy policy adheres to the provisions of the Privacy Statement
+        for UC Berkeley Websites, and The Fair Information Practice Principles,
+         and as such, we will provide the following statements.</p>
+      <p class="descText smallerText">If you decide to sign up for a subscription,
+         we'll ask you for only two pieces of personal information: an
+         email address and your full name (or what name you'd like to go by).
+          By signing up for the Hoverbyte email subscription, you consent
+          to allow us to collect this information.  This information
+          is only used to send updates to subscribers' preferred
+          email addresses, and we like to use your preferred name.
+          Your name and email will only be available to the owner
+          and administrator of the Hoverbyte website and will never
+          be shared or sold to anyone for any reason.
+          However, if we want to use any information, for any reason, in any way that
+is outside the purpose for which consent was given, we will ask permission and
+provide a detailed explanation.</p>
+      <p class="descText">Any changes to our privacy policy will be made
+        clear by including a description of the changes in the normal subscription emails.
+If you'd like to ask questions about our policies you can send am email
+to the webmaster contact address at contact@hoverbyte.com.  (WILL WE PROVIDE A PHONE NUMBER TOO?)</p>
     </div>
     <h2 id="terms" class="whiteHeader">Terms of Service</h2>
     <div class="terms">
-      <p class="descText">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis
-        eros, efficitur vel magna quis, suscipit egestas urna. Praesent sit amet
-        urna in lorem vestibulum sodales at eget orci. Aliquam lacinia diam
-        vitae tortor sodales, a fermentum nunc auctor. Mauris vel hendrerit
-        nunc. Proin bibendum, turpis nec malesuada consectetur, lorem neque
-        interdum lectus, eu ornare lacus urna non erat. In fringilla faucibus
-        tincidunt. In nec risus velit.
+      <p class="descText smallerText">
+        These terms explain a person's access to, and use of, the Hoverbyte
+        website, all of its services and products. By accessing the website,
+        subscribing to the newsletter, making a user account and accessing our
+        services and products, you consent to adhere to the terms; you also
+        confirm that you have read and understood the Privacy Policy, and that
+        you submit any information at your sole risk, and to the maximum amount
+        permitted by law, we are not liable for loss of such information in any
+        way. The Terms may change over time, and users will be notified of
+        changes via their preferred communication. </p>
+
+        <p class="descText smallerText">Hoverbyte, the Hoverbyte Logo, Goldie the Hoverbyte mascot and his
+        likeness, all products (tools, repositories and libraries) are
+        copyrighted to Surmount Systems Inc. The Trademark and intellectual
+        property belong to Surmount Systems Inc and its owners. Copying,
+        reproducing, commercially sharing Hoverbyte content or
+        reverse-engineering Hoverbyte software is strictly not permitted.</p>
+
+        <p class="descText smallerText">Hoverbyte, its owners, affiliates and associates shall never be liable
+        for any: personal, direct or indirect, incidental, punitive, special,
+        consequential or exemplary damages, failure of performance, errors,
+        omissions, interruptions, deletions, or defects in services and
+        products, alleged computer viruses, communications failures, theft,
+        destruction of property (pertaining to the Hoverbyte website, its
+        associates, or its products and services), illegal, offensive or
+        defamatory conduct of our users, or any of our users' associates,
+        unauthorized access or use of users' personal information, even if
+        Hoverbyte, its owners and associates have been made aware of the
+        possibility of such damages and occurrence.</p>
+
+        <p class="descText smallerText">Any use of the Hoverbyte
+        website, its software or service is a breach of the Terms and may
+        violate copyright, trademark and other laws. We maintain the right to
+        terminate any subscriptions and accounts that violate our Terms. Users
+        are free to delete accounts and may discontinue use of the Hoverbyte
+        software and website at any time for any reason. For any questions,
+        contact the team at :((STILL NEED SUPPORT EMAIL))</p>
       </p>
     </div>
     <h2 id="team" class="whiteHeader">The Team</h2>
@@ -262,17 +301,13 @@
       <div class="teamBlock">
         <img src="/images/hunter.png" />
         <p class="biotext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis
-          eros, efficitur vel magna quis, suscipit egestas urna. Praesent sit
-          amet urna in lorem vestibulum sodales at eget orci.
+          Hunter is a software developer and consultant with 15 years of experience in software architecture, cryptography and the blockchain.  He is the lead engineer for Hoverbyte software products.  You can visit his personal website at <a href="https://cryptoquick.com">Cryptoquick Consulting</a>.
         </p>
       </div>
       <div class="teamBlock">
         <img src="/images/ian.png" />
         <p class="biotext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis
-          eros, efficitur vel magna quis, suscipit egestas urna. Praesent sit
-          amet urna in lorem vestibulum sodales at eget orci.
+          Ian is an illustrator and graphic designer with a background in music and art.  You can visit his art website at <a href="divdurv.art">Div Durv Art</a>.
         </p>
       </div>
     </div>
