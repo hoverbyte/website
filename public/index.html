@@ -1,11 +1,345 @@
 <!DOCTYPE html>
+<!-- Run >yarn concurrently 'http-server public' 'livereload public' to start Python server -->
 <html>
   <head>
+    <!-- Begin Mailchimp Signup Form -->
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CAN I MOVE THIS INTO THE CSS FILE?? -->
+    <style type="text/css">
+      #mc_embed_signup {
+        background: #f1edec;
+        clear: left;
+        font: 100% Verdana, Geneva, sans-serif;
+      }
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Hoverbyte Technologies</title>
+    <title>Hoverbyte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="topSection">
+      <img
+        class="hoverbyteLogo"
+        alt="The Hoverbyte Logo"
+        src="/images/hb_logo_200px.png"
+      />
+
+      <h1>Hoverbyte</h1>
+
+      <nav class="linkFrags">
+        <a href="#about" class="rightmarginLink">About</a>
+        <a href="#products" class="rightmarginLink">Products</a>
+        <a href="#projects" class="rightmarginLink">Projects</a>
+        <a href="#mc_embed_signup">Subscribe</a>
+      </nav>
+    </header>
+    <div class="heroImage">
+      <p class="heroText">
+        We make language-conversion tools,<br />
+        to help developers save time and money,<br />
+      </p>
+      <img
+        class="hoverbyteMascot"
+        alt="The Hoverbyte Mascot, 'Goldie'"
+        src="images/hb_mascot_200px.png"
+        width="200"
+        height="200"
+      />
+    </div>
+    <h2 id="about">About</h2>
+    <div class="about">
+      <p class="descText">
+        Hoverbyte is offering code conversion services
+         for frontend and backend JavaScript into TypeScript. This includes type interfaces.
+         We are starting with a list of code-mod scripts generated from doing basic code changes
+          and auto-generating code-mods from those changes.
+      </p>
+    </div>
+    <h2 id="products">Products</h2>
+    <div class="products">
+        <p class="productDesc"><a href="?" class="productLink">Hoverbyte Converter</a>is an AST-aware diff/patch that will upscale your code!</p>
+        <p class="productDesc"><a href="?" class="productLink">Converted Package Repository</a></p>
+        <p class="productDesc"><a href="?" class="productLink">Managed Conversions</a></p>
+        <p class="productDesc"><a href="?" class="productLink">Code Conversion Cloud (C3)</a></p>
+        <p class="productDesc"><a href="?" class="productLink">Automated Test Suite</a></p>
+        <p class="productDesc"><a href="?" class="productLink">Technical Partnerships Program</a>
+        <p class="productDesc"><a href="?" class="productLink">J.I.T. Training Courses</a></p>
+    </div>
+    <h2 id="projects">Projects</h2>
+    <div class="projects">
+      <p class="descText">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis
+        eros, efficitur vel magna quis, suscipit egestas urna. Praesent sit amet
+        urna in lorem vestibulum sodales at eget orci. Aliquam lacinia diam
+        vitae tortor sodales, a fermentum nunc auctor. Mauris vel hendrerit
+        nunc. Proin bibendum, turpis nec malesuada consectetur, lorem neque
+        interdum lectus, eu ornare lacus urna non erat. In fringilla faucibus
+        tincidunt. In nec risus velit.
+      </p>
+    </div>
+
+    <!-- <h2 id="subscribe"></h2>
+    <div class="subscribe">
+      <p class="descText">
+        Please<a class="subLink" href="subscribe.html">follow this link</a>to
+        sign up for our email subscription. You'll be informed whenever we
+        release new tools for code-mods.
+      </p>
+    </div> -->
+
+    <div class="partition"></div>
+
+    <!-- THIS IS THE BEGINNING OF THE SUBSCRIPTION FORM -->
+    <div id="mc_embed_signup" class="subscribeForm">
+      <form
+        action="https://hoverbyte.us10.list-manage.com/subscribe/post?u=0b714fe0c16f01a813a5d55b3&amp;id=192625a7a6"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        class="validate"
+        target="_blank"
+        novalidate
+      >
+        <div id="mc_embed_signup_scroll">
+          <h2 class="subscribeFormTitle">Subscribe</h2>
+          <div class="indicates-required">
+            <span class="asterisk">*</span> indicates required
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL"
+              >What's your email address? <span class="asterisk">*</span>
+            </label>
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              class="required email"
+              id="mce-EMAIL"
+            />
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-FNAME"
+              >Your full name, please. <span class="asterisk">*</span>
+            </label>
+            <input
+              type="text"
+              value=""
+              name="FNAME"
+              class="required"
+              id="mce-FNAME"
+            />
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-CURRENT"
+              >How would you describe your current tech stack?
+            </label>
+            <input
+              type="text"
+              value=""
+              name="CURRENT"
+              class=""
+              id="mce-CURRENT"
+            />
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-FUTURE">What's your ideal tech stack? </label>
+            <input
+              type="text"
+              value=""
+              name="FUTURE"
+              class=""
+              id="mce-FUTURE"
+            />
+          </div>
+          <div class="mc-field-group input-group">
+            <strong
+              >Would you like us to contact you personally?
+              <span class="asterisk">*</span>
+            </strong>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  value="No, I'm good."
+                  name="CONTACTME"
+                  id="mce-CONTACTME-0"
+                /><label for="mce-CONTACTME-0">No, I'm good.</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  value="Please do!"
+                  name="CONTACTME"
+                  id="mce-CONTACTME-1"
+                /><label for="mce-CONTACTME-1">Please do!</label>
+              </li>
+            </ul>
+          </div>
+          <div id="mce-responses" class="clear">
+            <div
+              class="response"
+              id="mce-error-response"
+              style="display: none;"
+            ></div>
+            <div
+              class="response"
+              id="mce-success-response"
+              style="display: none;"
+            ></div>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input
+              type="text"
+              name="b_0b714fe0c16f01a813a5d55b3_192625a7a6"
+              tabindex="-1"
+              value=""
+            />
+          </div>
+          <div class="clear">
+            <input
+              type="submit"
+              value="Subscribe"
+              name="subscribe"
+              id="mc-embedded-subscribe"
+              class="button"
+            />
+          </div>
+          <label
+            >By subscribing, you agree to our
+            <a href="#terms">Terms of Service</a></label
+          >
+        </div>
+      </form>
+    </div>
+    <!-- THIS IS THE END OF THE SUBSCRIPTION FORM -->
+
+    <footer>
+      <nav class="footerBar">
+        <a class="footerLink rightmarginLink" href="#privacy">Privacy Policy</a>
+        <a class="footerLink rightmarginLink" href="#terms">Terms of Service</a>
+        <a class="footerLink" href="#team">The Team</a>
+      </nav>
+    </footer>
+
+    <h2 id="privacy" class="whiteHeader">Privacy Policy</h2>
+    <div class="privacy">
+      <p class="descText smallerText">
+        Our privacy policy adheres to the provisions of the Privacy Statement
+        for UC Berkeley Websites, and The Fair Information Practice Principles,
+         and as such, we will provide the following statements.</p>
+      <p class="descText smallerText">If you decide to sign up for a subscription,
+         we'll ask you for only two pieces of personal information: an
+         email address and your full name (or what name you'd like to go by).
+          By signing up for the Hoverbyte email subscription, you consent
+          to allow us to collect this information.  This information
+          is only used to send updates to subscribers' preferred
+          email addresses, and we like to use your preferred name.
+          Your name and email will only be available to the owner
+          and administrator of the Hoverbyte website and will never
+          be shared or sold to anyone for any reason.
+          However, if we want to use any information, for any reason, in any way that
+is outside the purpose for which consent was given, we will ask permission and
+provide a detailed explanation.</p>
+      <p class="descText">Any changes to our privacy policy will be made
+        clear by including a description of the changes in the normal subscription emails.
+If you'd like to ask questions about our policies you can send am email
+to the webmaster contact address at contact@hoverbyte.com.  (WILL WE PROVIDE A PHONE NUMBER TOO?)</p>
+    </div>
+    <h2 id="terms" class="whiteHeader">Terms of Service</h2>
+    <div class="terms">
+      <p class="descText smallerText">
+        These terms explain a person's access to, and use of, the Hoverbyte
+        website, all of its services and products. By accessing the website,
+        subscribing to the newsletter, making a user account and accessing our
+        services and products, you consent to adhere to the terms; you also
+        confirm that you have read and understood the Privacy Policy, and that
+        you submit any information at your sole risk, and to the maximum amount
+        permitted by law, we are not liable for loss of such information in any
+        way. The Terms may change over time, and users will be notified of
+        changes via their preferred communication. </p>
+
+        <p class="descText smallerText">Hoverbyte, the Hoverbyte Logo, Goldie the Hoverbyte mascot and his
+        likeness, all products (tools, repositories and libraries) are
+        copyrighted to Surmount Systems Inc. The Trademark and intellectual
+        property belong to Surmount Systems Inc and its owners. Copying,
+        reproducing, commercially sharing Hoverbyte content or
+        reverse-engineering Hoverbyte software is strictly not permitted.</p>
+
+        <p class="descText smallerText">Hoverbyte, its owners, affiliates and associates shall never be liable
+        for any: personal, direct or indirect, incidental, punitive, special,
+        consequential or exemplary damages, failure of performance, errors,
+        omissions, interruptions, deletions, or defects in services and
+        products, alleged computer viruses, communications failures, theft,
+        destruction of property (pertaining to the Hoverbyte website, its
+        associates, or its products and services), illegal, offensive or
+        defamatory conduct of our users, or any of our users' associates,
+        unauthorized access or use of users' personal information, even if
+        Hoverbyte, its owners and associates have been made aware of the
+        possibility of such damages and occurrence.</p>
+
+        <p class="descText smallerText">Any use of the Hoverbyte
+        website, its software or service is a breach of the Terms and may
+        violate copyright, trademark and other laws. We maintain the right to
+        terminate any subscriptions and accounts that violate our Terms. Users
+        are free to delete accounts and may discontinue use of the Hoverbyte
+        software and website at any time for any reason. For any questions,
+        contact the team at :((STILL NEED SUPPORT EMAIL))</p>
+      </p>
+    </div>
+    <h2 id="team" class="whiteHeader">The Team</h2>
+    <div class="team">
+      <div class="teamBlock">
+        <img src="/images/hunter.png" />
+        <p class="biotext">
+          Hunter is a software developer and consultant with 15 years of experience in software architecture, cryptography and the blockchain.  He is the lead engineer for Hoverbyte software products.  You can visit his personal website at <a href="https://cryptoquick.com">Cryptoquick Consulting</a>.
+        </p>
+      </div>
+      <div class="teamBlock">
+        <img src="/images/ian.png" />
+        <p class="biotext">
+          Ian is an illustrator and graphic designer with a background in music and art.  You can visit his art website at <a href="divdurv.art">Div Durv Art</a>.
+        </p>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function ($) {
+        window.fnames = new Array()
+        window.ftypes = new Array()
+        fnames[0] = 'EMAIL'
+        ftypes[0] = 'email'
+        fnames[1] = 'FNAME'
+        ftypes[1] = 'text'
+        fnames[3] = 'CURRENT'
+        ftypes[3] = 'text'
+        fnames[4] = 'FUTURE'
+        ftypes[4] = 'text'
+        fnames[5] = 'CONTACTME'
+        ftypes[5] = 'radio'
+      })(jQuery)
+      var $mcj = jQuery.noConflict(true)
+    </script>
+    <script>
+      document.write(
+        '<script src="http://' +
+          (location.host || 'localhost').split(':')[0] +
+          ':35729/livereload.js?snipver=1"></' +
+          'script>',
+      )
+    </script>
+  </body>
 </html>
